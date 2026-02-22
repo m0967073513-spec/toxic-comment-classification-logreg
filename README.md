@@ -42,18 +42,15 @@ Mean column-wise ROC AUC = 0.98098
 
 From-Scratch Verification (chosen class = toxic)
 The from-scratch pipeline reproduces sklearn’s TF-IDF + Logistic Regression inference with numerical precision:
-
+---------------------------
 Max abs diff: 4.440892098500626e-16
 Mean abs diff: 5.3685422535428014e-18
-Median abs diff: 0.0
 Correlation: 1.0
 AUC scratch: 0.983226016371545
 AUC sklearn: 0.983226016371545
-Test Max abs diff: 2.3314683517128287e-15
-Test Mean abs diff: 1.0324479793838496e-17
-Validation scratch pipeline time (sec): 0.21
-Test scratch pipeline time (sec): 13.5
-
+Validation scratch pipeline time: 0.21 sec
+Test scratch pipeline time: 13.5 sec
+------------------------------
 Notes
 
 train.csv / test.csv are intentionally excluded from Git tracking.
